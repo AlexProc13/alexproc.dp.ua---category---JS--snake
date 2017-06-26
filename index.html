@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Игра Змейка - SNAKE</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script language="JavaScript" src="js/jquery.js"></script>
+    <script language="JavaScript" src="js/config.js"></script>
+    <script language="JavaScript" src="js/main.js"></script>
+    <script language="JavaScript" src="js/decor.js"></script>
+    <script language="JavaScript" src="js/ajax.js"></script>
+    <script src=""></script>
+    <script src="js/jquery-ui.js"></script>
+
+
+</head>
+
+<body>
+<!-- Заголовок -->
+<h1>Добро пожаловать in SNAKE</h1>
+<!-- Форма входа -->
+<div class="authorization">
+    <form>
+        <h2><span>Войти</span></h2>
+        <p>
+            <label><i class="icon-user"></i>Ваше имя</label>
+            <input type="text" name="login" placeholder="Введите ваше имя">
+        </p>
+        <p>
+            <a href="#INPUT" class="button21">Вход</a>
+
+        </p>
+    </form>
+</div>
+<!-- Блок, выводит кнопку настройки -->
+<div class="config" hidden>
+    <a href="#sitting" name="sitting"><img src="img/sitting.png"></a>
+</div>
+<!-- Приветствие с играком-->
+<div class="greeting" hidden>
+    <p>Удачной игры,{username}</p>
+</div>
+<!-- Работа с АЯКС-->
+
+<!-- Поле игры -->
+<br>
+<hr>
+<div class="all" hidden>
+    <br>
+    <div id='table1' class="table"></div>
+    <!-- Заголовок -->
+    <div class="form">
+        <a id='game_snake' href="#GAME" class="button21" name="game_snake">Играть</a>
+        <a id='game_off' href="#GAMEOFF" class="button21">Выход</a>
+    </div>
+    <hr>
+    <br>
+</div>
+
+<!-- Всплывающие окно с Настройками-->
+<div id="modal_form">
+    <!-- Сaмo oкнo -->
+    <span id="modal_close">X</span>
+    <!-- Кнoпкa зaкрыть -->
+    <p><b>Настройки</b></p>
+    <!-- Тут любoе сoдержимoе -->
+    <br>
+    <!--  <br>
+  <p>Размер поля:
+            <select class="field">
+                <option value="10">10 на 10</option>
+                <option value="20">20 на 20</option>
+                <option value="25">25 на 25</option>
+            </select>
+        </p>-->
+    <br>
+    <p>Уровень:
+        <select class="level">
+            <option value="1"> Новичок</option>
+            <option value="2">Пользователь</option>
+            <option value="3">Эксперт</option>
+        </select>
+    </p>
+</div>
+<div id="overlay"></div>
+<div class="ajax" hidden>
+    <div class ="sendStatus"></div>
+    <a id='sendtStatic' href="#SEND" class="button21">Отправить</a>
+    <a id='getStatic' href="#GET" class="button21">Получить</a>
+
+    <div class ="getStatus"></div>
+    <a class='closeTable' href="#closetable" hidden>Закрыть</a>
+    <form id='formgetName'>
+        <p>Имена игроков:<input id='getName' type="text" name="name"></p>
+    </form>
+</div>
+<br>
+<!-- Пoдлoжкa -->
+</body>
+
+</html>
